@@ -1,0 +1,168 @@
+#cola {
+  animation: bounce 3.5s ease-in-out infinite;
+  transform-origin: 50% 100%;
+}
+
+#nariz {
+  animation: nariz infinite ease-in-out;
+  animation-duration: 10s;
+}
+
+#ojoIzquierdo,
+#ojoDerecho {
+  animation: ojos infinite ease-in-out;
+  animation-duration: 20s;
+  transform: scaleY(1);
+  transform-origin: 10% 60%;
+}
+#orejaDerecha {
+  animation: oreja infinite ease-in-out;
+  animation-duration: 23s;
+  transform-origin: 50% 100%;
+}
+#Pikachu {
+  animation: pikachu infinite ease-in-out;
+  animation-duration: 23s;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+}
+
+@keyframes nariz {
+  0% {
+    transform: translateY(0);
+  }
+  90% {
+    transform: translateY(-2px);
+  }
+  91% {
+    transform: translateY(0);
+  }
+  92% {
+    transform: translateY(-2px);
+  }
+  93% {
+    transform: translateY(0);
+  }
+  94% {
+    transform: translateY(-2px);
+  }
+  95% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes ojos {
+  0% {
+    transform: scaleY(1);
+  }
+  90% {
+    transform: scaleY(1);
+  }
+  90.5% {
+    transform: scaleY(0);
+  }
+
+  91% {
+    transform: scaleY(1);
+  }
+  91.5% {
+    transform: scaleY(0);
+  }
+  92% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes oreja {
+  0% {
+    transform: rotate(0deg);
+  }
+  90% {
+    transform: rotate(0deg);
+  }
+  90.5% {
+    transform: rotate(0deg);
+  }
+  91% {
+    transform: rotate(5deg);
+  }
+  91.5% {
+    transform: rotate(0deg);
+  }
+  92% {
+    transform: rotate(5deg);
+  }
+  93% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes pikachu {
+  0% {
+    transform: translateY(0) scale(1, 1);
+  }
+  70% {
+    transform: translateY(0) scale(1, 1);
+  }
+  71% {
+    transform: scale(1, 0.4);
+    transform-origin: 50% 100%;
+  }
+  72% {
+    transform: scale(0.8, 1);
+    transform-origin: 50% 100%;
+  }
+  73% {
+    transform: translateY(-30px) scale(1, 1);
+    transform-origin: 50% 100%;
+  }
+  89% {
+    transform: translateY(-30px) translateX(0) scale(1, 1);
+    transform-origin: 50% 100%;
+  }
+  /* 80% {
+    transform: translateY(-30px) translateX(-10px);
+  }
+  80.3% {
+    transform: translateY(-30px) translateX(10px);
+  }
+  80.6% {
+    transform: translateY(-30px) translateX(-10px);
+  }
+  80.9% {
+    transform: translateY(-30px) translateX(0);
+  } */
+  90% {
+    transform: translateY(-30px) scale(1, 1);
+    transform-origin: 50% 100%;
+  }
+  91% {
+    transform: translateY(0) scale(1, 1);
+    transform-origin: 50% 100%;
+  }
+  91.5% {
+    transform: translateY(0) scale(1, 0.7);
+    transform-origin: 50% 100%;
+  }
+  92% {
+    transform: translateY(0) scale(0.7, 1);
+    transform-origin: 50% 100%;
+  }
+  92.5% {
+    transform: translateY(0) scale(1, 1);
+    transform-origin: 50% 100%;
+  }
+
+  100% {
+    transform: translateY(0) scale(1, 1);
+    transform-origin: 50% 100%;
+  }
+}
